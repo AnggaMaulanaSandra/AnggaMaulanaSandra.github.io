@@ -233,6 +233,27 @@ h2 {
 .hero--section--img > img {
   width: 100%;
   height: 100%;
+  padding-left: 10rem;
+}
+
+.circle-container {
+  margin-top: 5rem;
+  width: 30rem; /* Set the size of the circle */
+  height: 30rem; /* Set the size of the circle */
+  background-color: white; /* Set the background color of the circle */
+  border-radius: 50%; /* Makes the element circular */
+  overflow: hidden; /* Hides the parts of the image outside the circle */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow to the circle */
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintains aspect ratio and covers the entire circle */
 }
 /* Hero Section Style Ends */
 
@@ -288,13 +309,14 @@ h2 {
 .skills--section--card--content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
-  align-self: stretch;
+  align-items: center;
 }
 .skills--section--title {
   color: var(--heading-color);
   font-size: 32px;
+  align-items: center;
   font-weight: 700;
   line-height: 45px;
 }
@@ -328,6 +350,7 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
+  background-color: var(--bg-shade);
 }
 .portfolio--container-box {
   display: flex;
